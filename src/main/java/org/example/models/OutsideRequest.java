@@ -10,4 +10,20 @@ public class OutsideRequest {
         this.f = f;
         this.d = d;
     }
+
+    public Floor getFloor() {
+        return f;
+    }
+
+    public void setFloor(Floor f) {
+        this.f = f;
+    }
+
+    public Direction getDoor() {
+        return d;
+    }
+
+    public void setDoor(Direction d) {
+        this.d = d;
+    }
 }

@@ -8,8 +8,8 @@ import org.example.strategy.ElevatorCallStrategy;
 import java.util.List;
 
 public class ElevatorManager {
-    private List<Elevator> elevators;
-    private List<Floor> floors;
+    private final List<Elevator> elevators;
+    private final List<Floor> floors;
     private ElevatorCallStrategy ecs;
 
     public ElevatorManager(List<Elevator> elevators, List<Floor> floors, ElevatorCallStrategy ecs) {
@@ -19,7 +19,12 @@ public class ElevatorManager {
     }
 
     public void handleOutsideRequest(OutsideRequest or){
+        Elevator selected = ecs.selectElevator(or, elevators);
+        selected.outsideRequest(or);
+    }
 
+    public List<Floor> getFloors() {
+        return floors;
     }
 
     public void setEcs(ElevatorCallStrategy ecs) {

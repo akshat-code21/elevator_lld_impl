@@ -4,16 +4,17 @@ import org.example.buttons.AlarmButton;
 import org.example.models.Elevator;
 
 public class AlarmSensor {
-    private AlarmButton ab;
-    private Elevator e;
+    private final Elevator e;
+
+    public AlarmSensor(Elevator e) {
+        this.e = e;
+    }
 
     public void alarmButtonPressed(){
-        if(this.ab.isPressed()){
-            notifyElevator();
-        }
+        notifyElevator();
     }
 
     private void notifyElevator(){
-        e.playSong();
+        e.triggerAlarm();
     }
 }

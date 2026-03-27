@@ -13,4 +13,16 @@ public class Floor {
         this.odb = odb;
         this.oub = oub;
     }
+
+    public int getFloorNumber() {
+        return floorNumber;
+    }
+
+    public OutsideUpButton getOub() {
+        return oub;
+    }
+
+    public OutsideDownButton getOdb() {
+        return odb;
+    }
 }

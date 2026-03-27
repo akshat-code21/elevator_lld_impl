@@ -5,4 +5,7 @@ public abstract class Button {
     public void press(){
         this.isPressed = true;
     }
+    public boolean isPressed() {
+        return isPressed;
+    }
 }

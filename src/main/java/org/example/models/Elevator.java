@@ -42,14 +42,26 @@ public class Elevator {
 
     public void updateWeight(double newWeight){
         this.currentWeight = newWeight;
+        if (checkOverWeight()) {
+            this.es = ElevatorState.OVERLOADED;
+            this.d.close();
+        }
     }
 
     private boolean checkOverWeight(){
         return this.currentWeight > maxWeight;
     }
 
-    public void playSong(){
+    public void triggerAlarm(){
+        this.es = ElevatorState.ALARMED;
         System.out.println("Playing songs");
     }
 
+    public Floor getCurrentFloor() {
+        return currentFloor;
+    }
+
+    public void outsideRequest(OutsideRequest or) {
+        outsideRequests.add(or);
+    }
 }

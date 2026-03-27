@@ -4,7 +4,12 @@ import org.example.models.Elevator;
 
 public class WeightSensor {
     private double currWeight;
-    private Elevator e;
+    private final Elevator e;
+
+    public WeightSensor(Elevator e) {
+        this.e = e;
+    }
+
     public void setCurrWeight(int newWeight){
         this.currWeight = newWeight;
         notifyElevator();

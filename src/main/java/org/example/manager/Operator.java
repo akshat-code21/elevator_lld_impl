@@ -1,11 +1,12 @@
 package org.example.manager;
 
+import org.example.models.Elevator;
 import org.example.models.Floor;
 
 public class Operator {
-    private String id;
-    private String name;
-    private ElevatorManager em;
+    private final String id;
+    private final String name;
+    private final ElevatorManager em;
 
     public Operator(String id, String name, ElevatorManager em) {
         this.id = id;
@@ -14,10 +15,10 @@ public class Operator {
     }
 
     public void addFloor(Floor f){
-
+        em.getFloors().add(f);
     }
 
-    public void setUnderMaintenance(){
-
+    public void setUnderMaintenance(Elevator e){
+        e.setUnderMaintenance();
     }
 }

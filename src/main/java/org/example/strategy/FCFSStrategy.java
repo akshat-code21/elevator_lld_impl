@@ -8,6 +8,7 @@ import java.util.List;
 public class FCFSStrategy implements ElevatorCallStrategy{
     @Override
     public Elevator selectElevator(OutsideRequest or, List<Elevator> elevators) {
+        // todo
         return null;
     }
 }
