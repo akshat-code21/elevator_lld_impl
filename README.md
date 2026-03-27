@@ -72,7 +72,7 @@ src/main/java/org/example/
 ### Clone and build
 
 ```bash
-git clone https://github.com/your-username/elevator-lld.git
+git clone https://github.com/akshat-code21/elevator_lld_impl
 cd elevator-lld
 mvn clean compile
 ```
