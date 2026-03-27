@@ -3,11 +3,12 @@ package org.example.manager;
 import org.example.models.Elevator;
 import org.example.models.Floor;
 import org.example.models.OutsideRequest;
+import org.example.models.OutsideRequestListener;
 import org.example.strategy.ElevatorCallStrategy;
 
 import java.util.List;
 
-public class ElevatorManager implements OutsideRequestListener{
+public class ElevatorManager implements OutsideRequestListener {
     private final List<Elevator> elevators;
     private final List<Floor> floors;
     private ElevatorCallStrategy ecs;

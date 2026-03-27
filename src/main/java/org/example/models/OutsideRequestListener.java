@@ -1,6 +1,4 @@
-package org.example.manager;
-
-import org.example.models.OutsideRequest;
+package org.example.models;
 
 public interface OutsideRequestListener {
     void onOutsideRequest(OutsideRequest or);

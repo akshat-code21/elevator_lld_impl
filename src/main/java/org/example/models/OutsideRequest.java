@@ -3,7 +3,7 @@ package org.example.models;
 import org.example.enums.Direction;
 
 public class OutsideRequest {
-    private final Floor f;
+    private Floor f;
     private final Direction d;
 
     public OutsideRequest(Floor f, Direction d) {
@@ -11,4 +11,11 @@ public class OutsideRequest {
         this.d = d;
     }
 
+    public Floor getF() {
+        return f;
+    }
+
+    public Direction getD() {
+        return d;
+    }
 }

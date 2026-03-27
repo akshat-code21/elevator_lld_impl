@@ -6,7 +6,7 @@ import org.example.models.Elevator;
 public class AlarmSensor {
     private final AlarmSensorListener asl;
 
-    public AlarmSensor(Elevator asl) {
+    public AlarmSensor(AlarmSensorListener asl) {
         this.asl = asl;
     }
 
