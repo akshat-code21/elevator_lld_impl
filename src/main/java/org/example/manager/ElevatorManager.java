@@ -30,4 +30,8 @@ public class ElevatorManager {
     public void setEcs(ElevatorCallStrategy ecs) {
         this.ecs = ecs;
     }
+
+    public void onOutsideRequest(OutsideRequest or){
+        handleOutsideRequest(or);
+    }
 }
