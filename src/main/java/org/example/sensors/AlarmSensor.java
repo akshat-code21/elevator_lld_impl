@@ -1,7 +1,6 @@
 package org.example.sensors;
 
 import org.example.models.AlarmSensorListener;
-import org.example.models.Elevator;
 
 public class AlarmSensor {
     private final AlarmSensorListener asl;
