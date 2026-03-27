@@ -36,4 +36,8 @@ public class ElevatorManager implements OutsideRequestListener {
     public void onOutsideRequest(OutsideRequest or){
         handleOutsideRequest(or);
     }
+
+    public int getNoOfFloors(){
+        return this.floors.size();
+    }
 }

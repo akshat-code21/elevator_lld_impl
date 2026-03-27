@@ -11,7 +11,7 @@ public class OutsideRequest {
         this.d = d;
     }
 
-    public Floor getF() {
+    public Floor getFloor() {
         return f;
     }
 

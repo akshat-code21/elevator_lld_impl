@@ -78,4 +78,8 @@ public class Elevator implements InsideRequestListener,WeightSensorListener,Alar
     public void onInsideRequest(Floor f) {
         insideRequest(f);
     }
+
+    public ElevatorState getEs() {
+        return es;
+    }
 }
