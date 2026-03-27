@@ -7,7 +7,7 @@ import org.example.strategy.ElevatorCallStrategy;
 
 import java.util.List;
 
-public class ElevatorManager {
+public class ElevatorManager implements OutsideRequestListener{
     private final List<Elevator> elevators;
     private final List<Floor> floors;
     private ElevatorCallStrategy ecs;
@@ -23,14 +23,15 @@ public class ElevatorManager {
         selected.outsideRequest(or);
     }
 
-    public List<Floor> getFloors() {
-        return floors;
+    public void addFloor(Floor f) {
+        floors.add(f);
     }
 
     public void setEcs(ElevatorCallStrategy ecs) {
         this.ecs = ecs;
     }
 
+    @Override
     public void onOutsideRequest(OutsideRequest or){
         handleOutsideRequest(or);
     }

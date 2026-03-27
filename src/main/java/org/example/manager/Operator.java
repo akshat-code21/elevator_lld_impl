@@ -14,8 +14,8 @@ public class Operator {
         this.em = em;
     }
 
-    public void addFloor(Floor f){
-        em.getFloors().add(f);
+    public void addFloor(Floor f) {
+        em.addFloor(f);
     }
 
     public void setUnderMaintenance(Elevator e){

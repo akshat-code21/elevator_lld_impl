@@ -1,13 +1,13 @@
 package org.example.sensors;
 
-import org.example.buttons.AlarmButton;
+import org.example.models.AlarmSensorListener;
 import org.example.models.Elevator;
 
 public class AlarmSensor {
-    private final Elevator e;
+    private final AlarmSensorListener asl;
 
-    public AlarmSensor(Elevator e) {
-        this.e = e;
+    public AlarmSensor(Elevator asl) {
+        this.asl = asl;
     }
 
     public void alarmButtonPressed(){
@@ -15,6 +15,6 @@ public class AlarmSensor {
     }
 
     private void notifyElevator(){
-        e.triggerAlarm();
+        asl.triggerAlarm();
     }
 }

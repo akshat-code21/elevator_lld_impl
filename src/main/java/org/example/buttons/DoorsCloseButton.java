@@ -12,6 +12,6 @@ public class DoorsCloseButton extends Button {
     @Override
     public void press() {
         super.press();
-        door.open();
+        door.close();
     }
 }
