@@ -21,8 +21,8 @@ public class Main {
 
         Door door1 = new Door(DoorStatus.DOOR_CLOSE);
 
-        AlarmSensor alarmSensor1 = new AlarmSensor(/* AlarmSensorListener */ null); // filled after elevator created
-        WeightSensor weightSensor1 = new WeightSensor(/* WeightSensorListener */ null); // filled after elevator created
+        AlarmSensor alarmSensor1 = new AlarmSensor(null);
+        WeightSensor weightSensor1 = new WeightSensor(null);
 
         DoorsOpenButton dob = new DoorsOpenButton(door1);
         DoorsCloseButton dcb = new DoorsCloseButton(door1);
