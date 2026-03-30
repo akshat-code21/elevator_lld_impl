@@ -69,6 +69,7 @@ public class Main {
         floorButtons.add(new FloorButton(floor3, elevator1));
 
         InsideButtonPanel ibp = new InsideButtonPanel(floorButtons, dob, dcb, ab);
+        elevator1.setIbp(ibp);
 
         Operator operator = new Operator("OP1", "Alice", em);
 

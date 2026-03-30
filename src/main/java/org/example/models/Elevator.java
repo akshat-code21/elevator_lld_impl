@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Elevator implements InsideRequestListener,WeightSensorListener,AlarmSensorListener{
     private final String id;
-    private final InsideButtonPanel ibp;
+    private InsideButtonPanel ibp;
     private ElevatorState es;
     private Floor currentFloor;
     private Direction currentDirection;
@@ -193,5 +193,9 @@ public class Elevator implements InsideRequestListener,WeightSensorListener,Alar
 
     public ElevatorState getEs() {
         return es;
+    }
+
+    public void setIbp(InsideButtonPanel ibp) {
+        this.ibp = ibp;
     }
 }
