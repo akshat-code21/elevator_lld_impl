@@ -33,6 +33,7 @@ public class Elevator implements InsideRequestListener,WeightSensorListener,Alar
 
     public void insideRequest(Floor f){
         insideRequests.add(f);
+        move();
     }
 
     public void move(){
@@ -182,6 +183,7 @@ public class Elevator implements InsideRequestListener,WeightSensorListener,Alar
 
     public void outsideRequest(OutsideRequest or) {
         outsideRequests.add(or);
+        move();
     }
 
     @Override
