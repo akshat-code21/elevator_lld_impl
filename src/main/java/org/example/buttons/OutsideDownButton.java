@@ -6,12 +6,16 @@ import org.example.models.Floor;
 import org.example.models.OutsideRequest;
 
 public class OutsideDownButton extends Button {
-    private final Floor f;
+    private Floor f;
     private final OutsideRequestListener orl;
 
     public OutsideDownButton(Floor f, OutsideRequestListener orl) {
         this.f = f;
         this.orl = orl;
+    }
+
+    public void setFloor(Floor f) {
+        this.f = f;
     }
 
     @Override
