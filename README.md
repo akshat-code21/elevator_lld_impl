@@ -7,7 +7,7 @@ A Java implementation of a real-world elevator system, designed using core OOP p
 
 ## UML Diagram
 
-![Elevator System UML Diagram](Elevator_drawio.png)
+![Elevator System UML Diagram](UML.png)
 
 --
 
